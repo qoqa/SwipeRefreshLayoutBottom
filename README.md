@@ -2,14 +2,14 @@ SwipeRefreshLayoutBottom Demo
 ================
 A control for Android apps that lets a user "pull up" from the bottom of content (usually a list) to refresh or load more items. This is a mirror of Android's SwipeRefreshLayout control.
 
-![Shutterstock Demo](https://github.com/JohannBlake/SwipeRefreshLayoutBottom/blob/master/Graphics/ShwipeRefreshLayoutBottom-Demo-Screenshot.gif)
+![Shutterstock Demo](https://github.com/JohannBlake/SwipeRefreshLayoutBottom/blob/master/Graphics/SwipeRefreshLayoutBottom-Demo-Screenshot.gif)
 
 
 ### Description
 
 This control is a direct port of Android's SwipeRefreshLayout control but with the code modified to allow the control to be used at the bottom of containers rather than the top and refresh is initiated by pulling up as opposed to pulling down as it is with the SwipeRefreshControl.
 
-Historically, apps used to include some means of loading more items when you reached the bottom of the list. This was either done by haveing a button at the bottom of the list that the user had to tap. Automatic loading is also often used where additional items get loaded as soon as the user scrolls to the end. Both solutions are out of date. The button solution looks ugly and takes up space. Auto-loading when reaching the bottom can result in a waste of network resources when the items are retrieved from a server and the user really isn't interested in loading more items.
+Historically, apps use to include some means of loading more items when you reached the bottom of the list. This was either done by having a button at the bottom of the list that the user had to tap. Automatic loading is also often used where additional items get loaded as soon as the user scrolls to the end. Both solutions are out of date. The button solution looks ugly and takes up space. Auto-loading when reaching the bottom can result in a waste of network resources when the items are retrieved from a server and the user really isn't interested in loading more items.
 
 
 ### Installation
