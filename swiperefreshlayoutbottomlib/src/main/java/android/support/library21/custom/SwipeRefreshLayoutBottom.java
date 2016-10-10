@@ -98,8 +98,6 @@ public class SwipeRefreshLayoutBottom extends ViewGroup {
     private float mTotalDragDistance = -1;
     private int mMediumAnimationDuration;
     private int mCurrentTargetOffsetTop;
-    // Whether or not the starting offset has been determined.
-    private boolean mOriginalOffsetCalculated = false;
 
     private float mInitialMotionY;
     private boolean mIsBeingDragged;
@@ -565,9 +563,8 @@ public class SwipeRefreshLayoutBottom extends ViewGroup {
                 getMeasuredHeight() - getPaddingTop() - getPaddingBottom(), MeasureSpec.EXACTLY));
         mCircleView.measure(MeasureSpec.makeMeasureSpec(mCircleWidth, MeasureSpec.EXACTLY),
                 MeasureSpec.makeMeasureSpec(mCircleHeight, MeasureSpec.EXACTLY));
-        if (!mUsingCustomStart && !mOriginalOffsetCalculated) {
-            mOriginalOffsetCalculated = true;
-            mCurrentTargetOffsetTop = mOriginalOffsetTop = getMeasuredHeight() - mCircleView.getMeasuredHeight();  // TODO
+        if (!mUsingCustomStart) {
+            mOriginalOffsetTop = getHeight();
         }
         mCircleViewIndex = -1;
         // Get the index of the circleview.
